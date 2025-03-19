@@ -1,7 +1,7 @@
 
 # MediVision AI : Diagnose with Clarity, Treat with Confidence.
 
-Live Link : https://medivision-ai.streamlit.app/
+- [Live Link](https://medivision-ai.streamlit.app/)  & [Blog Link](https://vanshgarg.framer.website/works/medivision-ai)
 
 # Problem Statement
 
