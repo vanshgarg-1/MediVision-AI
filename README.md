@@ -82,12 +82,12 @@ Healthcare accessibility remains one of the most critical challenges globally, w
 
 ### Core Capabilities
 
-- 🤖 **5 Advanced AI Models** - Gemini 3 Pro, 2.5 Pro/Flash/Flash-Lite, 2.0 Flash variants
+- 🤖 **5 Advanced AI Models** - Gemini 2.5 Pro/Flash/Flash-Lite, 2.0 Flash/Flash-Lite (all free tier)
 - 🌍 **12+ Languages** - Breaking language barriers in healthcare
 - 🖼️ **Multi-Modal Analysis** - Text, images, or combined input
 - 🔒 **Zero Data Storage** - Complete privacy protection
 - 📊 **Real-Time Insights** - Instant analysis with streaming responses
-- 💾 **Session History** - Track and review past analyses
+- 💾 **Session History** - Track last 10 analyses with meaningful names
 - 📥 **Export Reports** - Professional markdown documentation
 - 🎨 **Enterprise-Grade UI** - Glassmorphism design system
 
@@ -285,11 +285,12 @@ History Storage → Export Ready
 - Non-diagnostic educational insights
 
 #### 3. **Multi-Model AI Support**
-Choose from 4 powerful Google Gemini models:
-- **Gemini 2.0 Flash**: Fast and efficient multimodal AI
-- **Gemini 1.5 Pro**: Advanced reasoning and understanding
-- **Gemini 1.5 Flash**: Fast and versatile performance
-- **Gemini 1.0 Pro**: Reliable general-purpose model
+Choose from 5 powerful Google Gemini models:
+- **Gemini 2.5 Pro**: Advanced thinking and complex reasoning
+- **Gemini 2.5 Flash**: Best balance of speed & quality
+- **Gemini 2.5 Flash-Lite**: Ultra fast, most cost-efficient
+- **Gemini 2.0 Flash**: Workhorse with 1M token context
+- **Gemini 2.0 Flash-Lite**: Small & efficient with 1M context
 
 ### 🎨 UI/UX Features
 
@@ -305,10 +306,10 @@ Choose from 4 powerful Google Gemini models:
 - Professional branding elements
 
 #### 6. **Interactive Components**
-- Side-by-side example query cards
-- Collapsible sections and expanders
-- Responsive button designs
-- Smooth transitions and effects
+- Collapsible history sections with expanders
+- Responsive button designs and controls
+- Smooth transitions and hover effects
+- Professional form inputs and validation
 
 ### 📊 Session & State Management
 
@@ -361,24 +362,19 @@ Refine responses with 5 different tweaks:
 - Live response generation
 - Chunk-by-chunk display
 - Immediate feedback
-- Cancellable operations
-
-#### 14. **Syntax Highlighting**
-- Automatic code block detection
-- Language-specific highlighting
-- Clean formatting for technical content
+- Progressive UI updates
 
 ### 📝 Content Features
 
-#### 15. **Pre-built Query Templates**
-5 ready-to-use medical scenarios:
-- 🫁 Chest X-Ray Analysis
-- 🔬 Skin Condition Assessment
-- 🦴 Joint Pain Evaluation
-- 🧠 Neurological Symptoms
-- 🏥 Abdominal Discomfort
+#### 14. **Pre-built Query Templates**
+5 example medical scenarios available in code:
+- 🫁 Chest X-Ray Analysis - Respiratory assessment
+- 🔬 Skin Condition Assessment - Dermatology evaluation
+- 🦴 Joint Pain Evaluation - Orthopedic concerns
+- 🧠 Neurological Symptoms - Neurological assessment
+- 🏥 Abdominal Discomfort - Gastroenterology analysis
 
-#### 16. **User Feedback System**
+#### 15. **User Feedback System**
 - Thumbs up/down rating
 - Feedback statistics tracking
 - Satisfaction rate calculation
@@ -386,18 +382,13 @@ Refine responses with 5 different tweaks:
 
 ### 💾 Export & Data Management
 
-#### 17. **Markdown Export**
+#### 16. **Markdown Export**
 - Professional report format
 - Complete analysis details
 - Disclaimer and recommendations
 - Timestamped reports
-- Unique report IDs
-
-#### 18. **Download Capabilities**
-- Individual analysis export
-- Batch history downloads
-- Formatted markdown files
-- Preservation of formatting
+- Download individual analyses
+- Preserved markdown formatting
 
 ### 🔐 Security & Privacy
 
@@ -414,11 +405,12 @@ Refine responses with 5 different tweaks:
 - Secure input masking
 
 #### 21. **Safety Settings**
-Content filtering for:
-- Harassment (BLOCK_MEDIUM_AND_ABOVE)
-- Hate speech (BLOCK_MEDIUM_AND_ABOVE)
-- Sexually explicit (BLOCK_MEDIUM_AND_ABOVE)
+Relaxed content filtering for medical content:
+- Harassment (BLOCK_ONLY_HIGH)
+- Hate speech (BLOCK_ONLY_HIGH)
+- Sexually explicit (BLOCK_ONLY_HIGH)
 - Dangerous content (BLOCK_ONLY_HIGH)
+*Note: Settings relaxed to allow medical terminology without false blocks*
 
 ### 📂 Architecture Features
 
@@ -497,7 +489,7 @@ MediVision-AI/
 - **Token Counter**: Usage tracking and cost calculation
 - **Security**: API key encryption and validation
 - **Export Handler**: Report generation and formatting
-- **Response Renderer**: Syntax highlighting and formatting
+- **Theme Manager**: Glassmorphism styling and CSS
 
 #### 3. **Configuration Layer**
 - Application settings
@@ -662,7 +654,7 @@ MediVision-AI/
 │   ├── security.py          # API key encryption and validation
 │   ├── model_handler.py     # AI model initialization and streaming
 │   ├── export_handler.py    # Export and download functionality
-│   └── response_renderer.py # Response formatting and syntax highlighting
+│   └── response_renderer.py # Response formatting utilities (available but not actively used)
 │
 ├── components/                # UI components package
 │   ├── __init__.py           # Package initializer
@@ -755,16 +747,16 @@ This tool is designed for **educational and informational purposes only**. It is
 
 | Metric | Value | Description |
 |--------|-------|-------------|
-| **Total Features** | 24+ | Distinct capabilities |
-| **AI Models** | 5 | Gemini 2.5/3.0 variants |
+| **Total Features** | 21+ | Distinct capabilities |
+| **AI Models** | 5 | Gemini 2.5/2.0 variants |
 | **Languages** | 12+ | Output language support |
 | **Input Modes** | 3 | Text, Image, Combined |
 | **Prompt Styles** | 5 | Customizable templates |
 | **Regeneration Options** | 5 | Response refinements |
 | **History Capacity** | 10 | Saved conversations |
-| **Max Tokens** | 8,192 | Per response |
+| **Max Tokens** | 4,096 | Per response (optimized for speed) |
 | **Response Time** | <5s | Average analysis time |
-| **Uptime** | 99.9% | Service availability |
+| **Default Model** | Flash-Lite | Fastest response |
 
 ### Performance Benchmarks
 
@@ -853,13 +845,13 @@ This tool is designed for **educational and informational purposes only**. It is
 
 ### AI Model Specifications
 
-| Model | Parameters | Speed | Quality | Use Case |
-|-------|-----------|-------|---------|----------|
-| Gemini 3 Pro | Largest | Slowest | Highest | Complex analysis |
-| Gemini 2.5 Pro | Large | Medium | Very High | Detailed reports |
-| Gemini 2.5 Flash | Medium | Fast | High | Balanced use |
-| Gemini 2.5 Flash-Lite | Small | Fastest | Good | Quick insights |
-| Gemini 2.0 Flash | Medium | Fast | High | General purpose |
+| Model | Speed | Quality | Use Case | Tier |
+|-------|-------|---------|----------|------|
+| Gemini 2.5 Pro | Medium | Very High | Complex reasoning, detailed reports | Free |
+| Gemini 2.5 Flash | Fast | High | Balanced speed & quality (recommended) | Free |
+| Gemini 2.5 Flash-Lite | Fastest | Good | Quick insights, fast responses (default) | Free |
+| Gemini 2.0 Flash | Fast | High | 1M context, general purpose | Free |
+| Gemini 2.0 Flash-Lite | Very Fast | Good | 1M context, cost-efficient | Free |
 
 ### System Requirements
 
